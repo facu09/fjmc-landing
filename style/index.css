@@ -22,9 +22,16 @@
   margin-top: 2%;
 }
 .inicio .contenido header .contenido-header .contenedor-logo {
-  width: 6em;
-  height: 6em;
-  margin-top: -2em;
+  width: 7em;
+  height: 7em;
+  margin-top: -1.6em;
+}
+@media screen and (max-width: 800px) {
+  .inicio .contenido header .contenido-header .contenedor-logo {
+    width: 5.2em;
+    height: 5.2em;
+    margin-top: -7px;
+  }
 }
 .inicio .contenido header .contenido-header .contenedor-logo img {
   width: 100%;
@@ -95,7 +102,8 @@
 }
 @media screen and (max-width: 800px) {
   .inicio .contenido .presentacion h2 {
-    font-size: 40px;
+    font-size: 32px;
+    padding: 0px 20px;
   }
 }
 .inicio .contenido .presentacion h2 span {
@@ -103,12 +111,22 @@
   /* color: #ff5080; */
   color: #50ff50;
 }
+@media screen and (max-width: 800px) {
+  .inicio .contenido .presentacion h2 span {
+    font-size: 42px;
+  }
 }
 .inicio .contenido .presentacion .descripcion {
   max-width: 700px;
   margin: 25px auto;
   font-size: 18px;
   text-align: center;
+  /* padding: 0px 20px; */
+}
+@media screen and (max-width: 800px) {
+  .inicio .contenido .presentacion .descripcion {
+      padding: 0px 20px;
+  }
 }
 .inicio .contenido .presentacion a {
   text-decoration: none;
@@ -268,13 +286,23 @@
     padding: 50px 15px;
   }
 }
-#servicios .titulo-seccion {
+/* #servicios .titulo-seccion {
   font-size: 22px;
   font-size-text-transform: uppercase;
   font-size-color: #111135;
   font-size-text-decoration: underline;
   font-size-text-decoration-color: #d3d3d3;
   font-size-text-decoration-thickness: 5px;
+} */
+.servicios .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #d3d3d3;
+          text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
 }
 #servicios .contenedor-servicio {
   display: flex;
@@ -396,13 +424,22 @@
 .portfolio .contenedor-proyectos .proyecto {
   max-width: 450px;
   /* width: 30%; */
-  height: 13.5em;
+  /* height: 13.5em; */
+  height: 18em;
   border: 1px solid #000;
-  margin: 1rem 0.6rem;
+  margin: 3rem 0.6rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
+@media screen and (max-width: 800px) {
+  .portfolio .contenedor-proyectos .proyecto {
+    height: 14em;
+    margin: 1.5rem 0.6rem;
+  }
+}
+
+
 .portfolio .contenedor-proyectos .proyecto:hover img {
   filter: grayscale(0);
 }
